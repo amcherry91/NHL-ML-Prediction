@@ -30,7 +30,7 @@ Load your IDE and create a new project. Ensure that the repository files are sav
 
 When selecting a project interpreter navigate to the installtion path of Anaconda and select the following file. __Ensure that you select the pythonW.exe not python.exe__
 
-><drive>:\<install location>\Anaconda\envs\tensor\pythonw.exe>
+> <drive>:\<install location>\Anaconda\envs\tensor\pythonw.exe>
 
 Then create a configuration in your IDE by selecting the _NHL v4.py_ file as the script path by navigating the project folder on your local drive.
 
