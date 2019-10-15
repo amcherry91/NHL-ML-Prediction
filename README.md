@@ -37,7 +37,27 @@ Then create a configuration in your IDE by selecting the _NHL v4.py_ file as the
 The script should now run
 
 ## How to use
-In order to run the algorithm, create a new 
+The script is currently setup to train 5000 times (apprimately 6 minutes on a modern 6-core laptop) and will print all accuracy results for each time the model trains (5000) and will then print the predicted versus real results. 
+
+Data that is used to train the model can be changed by editing the entries in the lists in the following lines of code
+
+```
+x = list(zip(game_id, team_id, HoA, won, settled_in, head_coach, goals, shots, hits, pim, powerPlayOpportunities, powerPlayGoals, faceOffWinPercentage, giveaways, takeaways,
+             type, away_team_id, home_team_id, away_goals, home_goals, home_rink_side_start, venue, venue_time_zone_id, venue_time_zone_offset))
+y = list(outcome)
+```
+
+The size of the test data sample (currently a 10% sample) can be edited by changing the 'test_size=' function in the following line.
+
+```
+x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)
+```
+
+To change the number of times that the model is trained change the value in 'range(5000)' in the following line of code
+
+```
+for _ in range(5000):
+```
 
 ## Dataset
 The dataset used was a cleaned version of the [NHL Game Data](https://www.kaggle.com/martinellis/nhl-game-data) provided by Martin Ellis on Kaggle.
