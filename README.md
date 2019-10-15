@@ -10,7 +10,7 @@ See the [TensorFlow install guide](https://www.tensorflow.org/install) for the [
 
 [Anaconda](https://www.anaconda.com/distribution/) was also used to create and manage the Tensorflow environment. When installing Anaconda, ensure that "Add Anaconda to my PATH environment variable" is __checked__
 
-One you have downloaded and installed Tensorflow and Anaconda. Open a command terminal and create a new tensorflow environment using the following code
+Once you have downloaded and installed Tensorflow and Anaconda. Open a command terminal and create a new tensorflow environment using the following code
 ```
 conda create -n tensor python=3.6
 ```
