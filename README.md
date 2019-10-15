@@ -4,7 +4,20 @@ Algorithm using python and Tensorflow to predict NHL results using a linear regr
 
  # Installation
 
-See the [TensorFlow install guide](https://www.tensorflow.org/install) for the [pip package](https://www.tensorflow.org/install/pip). [Anaconda](https://www.anaconda.com/distribution/) was also used to create and manage the Tensorflow environment.
+See the [TensorFlow install guide](https://www.tensorflow.org/install) for the [pip package](https://www.tensorflow.org/install/pip). 
+
+[Anaconda](https://www.anaconda.com/distribution/) was also used to create and manage the Tensorflow environment. When installing Anaconda, ensure that "Add Anaconda to my PATH environment variable" is __checked__
+
+To install the required libraries to run the script enter the following into your python IDE terminal
+```
+pip install numpy
+pip install pandas
+pip install keras
+pip install sklearn
+pip install matplotlib
+pip install seaborn
+```
+
 
 ## Dataset
 The dataset used was a cleaned version of the [NHL Game Data](https://www.kaggle.com/martinellis/nhl-game-data) provided by Martin Ellis on Kaggle.
