@@ -1,6 +1,6 @@
 # NHL Machine Learning Prediction Model
 
-An algorithm using python and Tensorflow to predict NHL results using a linear regression model. The end-goal is to create an unsupervised neural network to train the AI and make predictions to enable greater accuracy for applications such as betting or NHL Fantasy teams. The current best results of this model are 77% however this requires further validation and testing before being implemented.
+An algorithm using python and Tensorflow to predict NHL results using a linear regression model made for a school project. The end-goal is to create an unsupervised neural network to train the AI and make predictions to enable greater accuracy for applications such as betting or NHL Fantasy teams. The current best results of this model are 77% however this requires further validation and testing before being implemented.
 
  # Installation
 
@@ -37,7 +37,7 @@ Then create a configuration in your IDE by selecting the _NHL v4.py_ file as the
 The script should now run
 
 ## How to use
-The script is currently setup to train 5000 times (apprimately 6 minutes on a modern 6-core laptop) and will print all accuracy results for each time the model trains (5000) and will then print the predicted versus real results. 
+The script is currently set to train 5000 times and will print all accuracy results for each time the model trains (5000) and will then print the predicted versus real results. 
 
 Data that is used to train the model can be changed by editing the entries in the lists in the following lines of code
 
@@ -53,7 +53,7 @@ The size of the test data sample (currently a 10% sample) can be edited by chang
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)
 ```
 
-To change the number of times that the model is trained change the value in 'range(5000)' in the following line of code
+To change the number of times that the model is trained, change the value in 'range(5000)' in the following line of code
 
 ```
 for _ in range(5000):
