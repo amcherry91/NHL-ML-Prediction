@@ -1,4 +1,4 @@
-# NHL Machine Learning Prediction
+# NHL Machine Learning Prediction Model
 
 Algorithm using python and Tensorflow to predict NHL results using a linear regression model. The end-goal is to create an unsupervised neural network to train the AI and make predictions to enable greater accuracy for applications such as betting or NHL Fantasy teams.
 
