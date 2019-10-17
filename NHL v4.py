@@ -59,7 +59,7 @@ x = list(zip(game_id, team_id, HoA, won, settled_in, head_coach, goals, shots, h
 y = list(outcome)
 
 best = 0
-for _ in range(5000):
+for _ in range(500):
     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)
 
     linear = linear_model.LinearRegression()
@@ -73,7 +73,8 @@ for _ in range(5000):
         with open("NHLmodel.pickle", "wb") as f:
             pickle.dump(linear, f)
 
-x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)
+# once model is trained, comment out the above and enable the line below to allow loading of the pickle file and avoid re-training
+"""x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)"""
 
 #load the best algorithm using the saved pickle file from above
 """pickle_in = open("NHLmodel.pickle", "rb")
