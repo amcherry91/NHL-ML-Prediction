@@ -77,10 +77,10 @@ for _ in range(500):
 """x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size= 0.1)"""
 
 #load the best algorithm using the saved pickle file from above
-"""pickle_in = open("NHLmodel.pickle", "rb")
+pickle_in = open("NHLmodel.pickle", "rb")
 linear = pickle.load(pickle_in)
 acc = linear.score(x_test, y_test) # acc is short for accuracy
-print("Accuracy: ", acc)"""
+print("Accuracy: ", acc)
 
 # compare predicted result to real result
 predictions = linear.predict(x_test)
